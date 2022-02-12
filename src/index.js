@@ -38,12 +38,12 @@ class Revew {
   
       const chatIcon = document.createElement('img');
       chatIcon.src = 'https://i.ibb.co/z8Lp7CK/star.png';
-      chatIcon.classList.add('icon');
+      chatIcon.classList.add('revew-icon');
       this.chatIcon = chatIcon;
   
       const closeIcon = document.createElement('img');
       closeIcon.src = 'https://i.ibb.co/8sVRbDb/cross.png';
-      closeIcon.classList.add('icon', 'hidden');
+      closeIcon.classList.add('revew-icon', 'hidden');
       this.closeIcon = closeIcon;
   
       buttonContainer.appendChild(this.chatIcon);
@@ -118,7 +118,7 @@ class Revew {
     createStyles() {
       const styleTag = document.createElement('style');
       styleTag.innerHTML = `
-              .icon {
+              .revew-icon {
                   cursor: pointer;
                   width: 70%;
                   position: absolute;
@@ -146,6 +146,7 @@ class Revew {
                   transition: max-height .2s ease;
                   font-family: 'Ubuntu Mono', monospace;
                   border-radius: .5em;
+                  background: ${this.secondaryColor}
               }
          
               .review-container.hidden {
