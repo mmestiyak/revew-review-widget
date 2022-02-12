@@ -104,7 +104,7 @@ var Revew = /** @class */ (function () {
         };
         var reviewStarsInput = [1, 2, 3, 4, 5]
             .map(function (item) {
-            return singleReviewScore(item + 1);
+            return singleReviewScore(item);
         })
             .reverse()
             .join('');

@@ -86,7 +86,7 @@ class Revew {
   
       const reviewStarsInput = [1,2,3,4,5]
         .map((item) => {
-          return singleReviewScore(item + 1);
+          return singleReviewScore(item );
         })
         .reverse()
         .join('');
