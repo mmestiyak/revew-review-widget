@@ -34,6 +34,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
+var instance;
 var Revew = /** @class */ (function () {
     function Revew(_a) {
         var _b = _a === void 0 ? {} : _a, _c = _b.position, position = _c === void 0 ? 'bottom-right' : _c, _d = _b.primaryColor, primaryColor = _d === void 0 ? '#41c19e' : _d, _e = _b.secondaryColor, secondaryColor = _e === void 0 ? '#fff' : _e;
@@ -43,6 +44,10 @@ var Revew = /** @class */ (function () {
         this.open = false;
         this.initialise();
         this.createStyles();
+        if (instance) {
+            throw new Error("You can only create one instance of revew widget! 💔");
+        }
+        instance = this;
     }
     Revew.prototype.getPosition = function (position) {
         var _a;

@@ -1,4 +1,4 @@
-
+let instance;
 class Revew {
     constructor({
       position = 'bottom-right',
@@ -11,6 +11,10 @@ class Revew {
       this.open = false;
       this.initialise();
       this.createStyles();
+      if (instance) {
+        throw new Error("You can only create one instance of revew widget! 💔");
+      }
+      instance = this;
     }
   
     getPosition(position) {
