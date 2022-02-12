@@ -8,7 +8,7 @@
 Inside of the page where you want to show the revew widget, before closing the body tag   paste these scripts
 
 ```sh
-<script src='https://cdn.jsdelivr.net/gh/mmestiyak/revew-review-widget@2c28314/dist/index.js'></script
+<script src='https://cdn.jsdelivr.net/gh/mmestiyak/revew-review-widget@2c28314/dist/index.js'></script>
 <script>
  // Initialize the widget
 new Revew()
